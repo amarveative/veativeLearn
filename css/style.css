@@ -7,6 +7,16 @@ a{text-decoration: none;}
 
 body{font-family: 'Roboto', sans-serif; background-color: #FCFCFC;}
 
+.only-desk{
+    display:flex;
+}
+
+.only-mob{display:none;}
+
+.without-bg{
+    background-color: transparent!important;
+}
+
 .container{max-width: 1200px;}
 
 header {
@@ -236,12 +246,21 @@ header {
 
 .ve_explore{
     background-color: rgb(124 181 62);
-    color: #fff!important;
+    color: #fff;
     padding: 15px 20px;
     border: #6ab165;
     border-radius: 5px;
     cursor: pointer;
     font-size: 14px;
+}
+
+.ve_explore i{margin-right: 2px;}
+
+.ve_explore:hover{
+    text-decoration: none;
+    background-color: transparent;
+    border: 2px solid #6ab165;
+    color: rgb(124 181 62);
 }
 
 .content-text{
@@ -279,7 +298,7 @@ header {
     background-color: #f4efec;
 }
 
-.veative-history-sec h3.head{
+h3.head{
     color:#83ac4e;
     font-size: 30px;
     font-weight: 300;
@@ -287,8 +306,22 @@ header {
     margin-bottom: 30px;
 }
 
-.veative-history-sec h3.head span{
+h3.head span{
     font-weight: 700;
+}
+
+.sub-head{
+    font-size: 21px;
+    line-height: 25px;
+    font-weight: 300;
+    color:#444;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.que{
+    display: block;
+    color:#626262;    
+    font-weight: 600;
 }
 
 .veative-history-sec p{
@@ -535,7 +568,86 @@ ul.desk_box li {
     letter-spacing: .5px;
 }
 
+.light-text{
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: 300;
+    color:#444;    
+    font-family: "Open Sans", sans-serif; 
+    margin-bottom: 15px;       
+}
 
+.box-text{
+    position: relative;
+    background-color: #e6edf7;
+    padding:5px 8px;
+    letter-spacing: 8px;
+    display: inline-block;
+    margin-bottom: 15px;
+    font-size: 17px;
+    line-height: 30px;
+    font-weight: 400;
+}
+
+.red-text{
+    color: #f3795d;
+    font-weight: bold;
+    margin-bottom: 15px;
+    font-size: 21px;
+    line-height: 25px;
+}
+
+.counter-sec {
+    position: relative;
+    padding: 60px 0 30px;
+}
+
+.inner-counterbox{
+    position: relative;
+    padding:60px 0 30px;
+    background-color: #edeff2;
+}
+
+.counter {
+    padding: 20px;
+    text-align: center;
+    position: relative;
+}
+
+.count-title {
+    font-size: 90px;
+    font-weight:400;
+    margin-bottom: 10px;    
+    color:#931919;    
+  }
+
+  .counter h4{
+    font-size: 25px;
+    line-height: 27px;
+    font-weight: 300;
+    letter-spacing: 0px;
+    color:#626262;
+    position: relative;   
+    margin-bottom: 10px; 
+    font-family: "Open Sans", sans-serif; 
+  }
+
+  .counter h4:after{
+    content: '';
+    position: relative;
+    display: block;
+    width:60%;
+    background-color:rgba(0,0,0,.08);
+    height: 1px;
+    margin: 0 auto;
+  }
+  
+  .count-text {
+    font-size: 14px;
+    letter-spacing: .5px;
+    line-height: 21px;
+    color:#626262;
+  }
 
 
 /* footer css */
@@ -562,6 +674,27 @@ ul.footer-social{
 .footer-menu li a:hover{text-decoration: underline;}
 footer  p.copyright {margin: 0;padding: 15px 0;font-size: 14px;text-align: center;color: #fff;font-weight: 400;}
 
+/*mobile menu */
+.mob-header{
+    padding: 15px 0;
+}
+.moblogo{
+    float: left;
+    width: 60%;
+    text-align: left;    
+}
+
+.mobicon{
+    float: left;
+    width:40%;
+    text-align: right;
+    position: relative;
+    top: 0px;
+    font-size: 20px;
+}
+
+
+
 @media(max-width:992px){
     .banner-sec{height: 400px;}
     .video-overlaybox {float: right;width: 40%;padding-right: 40px;}
@@ -571,8 +704,10 @@ footer  p.copyright {margin: 0;padding: 15px 0;font-size: 14px;text-align: cente
 }
 
 @media(max-width:768px){
+    .only-desk{display: none;}
+    .only-mob{display:block;}
     .banner-sec{height: 360px;}
-    .video-overlaybox {float: right;width: 40%;padding-right: 40px;}
+    .video-overlaybox {float: right;width: 50%;padding-right: 40px;}
     .video-overlaytext {top: 10px;width: 100%;left: 20px;align-items: center;justify-content: flex-end;}
     .video-overlaybox h3 {line-height: 27px;font-size: 22px;}
     .video-overlaybox p {line-height: 22px;font-size: 16px; padding-top: 0px;}    
@@ -602,4 +737,5 @@ footer  p.copyright {margin: 0;padding: 15px 0;font-size: 14px;text-align: cente
 
 @media(max-width:500px){
     .banner-sec{height: 250px;}
+    .video-overlaybox {float: right;width: 100%;padding-right: 40px;}
 }

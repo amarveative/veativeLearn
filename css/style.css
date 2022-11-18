@@ -337,6 +337,11 @@ h3.head span{
     margin-bottom: 10px;
 }
 
+.global-section{
+    padding: 0px 0px 40px;
+    position: relative;
+}
+
 .home-tab-sec{
     position: relative;
     padding: 60px 0;
@@ -649,6 +654,69 @@ ul.desk_box li {
     color:#626262;
   }
 
+  .contact-tabsec {
+    padding: 30px 0;
+    background-color: #f4f4f4;
+    margin-top: 10px;
+    border-top: 1px solid #ccc;
+}
+
+  .contact-tabsec .accordion-button::after {
+    background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='%23333' xmlns='http://www.w3.org/2000/svg'%3e%3cpath fill-rule='evenodd' d='M8 0a1 1 0 0 1 1 1v6h6a1 1 0 1 1 0 2H9v6a1 1 0 1 1-2 0V9H1a1 1 0 0 1 0-2h6V1a1 1 0 0 1 1-1z' clip-rule='evenodd'/%3e%3c/svg%3e");
+    transform: scale(.7) !important;
+  }
+  .contact-tabsec .accordion-button:not(.collapsed)::after {
+    background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='%23fff' xmlns='http://www.w3.org/2000/svg'%3e%3cpath fill-rule='evenodd' d='M0 8a1 1 0 0 1 1-1h14a1 1 0 1 1 0 2H1a1 1 0 0 1-1-1z' clip-rule='evenodd'/%3e%3c/svg%3e");
+  }
+
+  .contact-tabsec .row.d-block.d-sm-none .col-lg-12 {
+    padding: 0;
+}
+
+.contact-tabsec .card-body {
+    background-color: #d4d4d4;
+    padding: 30px 15px;
+}
+
+.contact-tabsec  .desk_white_bx {
+    background-color: #fff;
+    padding: 15px 10px;
+    border-radius: 10px;
+    min-height: 250px;
+    max-height: 250px;
+}
+
+.contact-tabsec .carousel-indicators [data-bs-target] {    
+    width: 10px;
+    height: 10px;    
+    background-color: #000;   
+    border-top: 0px solid transparent;
+    border-bottom: 0px solid transparent;
+    opacity: .2;    
+    border-radius: 10px;
+}
+
+.contact-tabsec .carousel-indicators .active{opacity: 1;}
+
+.contact-tabsec .desk_white_bx h3 {margin: 0;}
+.contact-tabsec .desk_white_bx h4{margin: 0;}
+
+.contact-tabsec .accordion-button:not(.collapsed) {
+    color: #fff;
+    background-color: #7cb53e !important;
+    box-shadow: inset 0 -1px 0 rgb(0 0 0 / 13%);
+}
+
+.contact-tabsec .accordion-button:focus{
+    border-color: #ccc;
+    outline: 0;
+    box-shadow: 0 0 0 0.3px rgb(18 18 18 / 25%);    
+}
+
+.contact-tabsec .accordion-button{
+    box-shadow: 0 0 0 0.3px rgb(18 18 18 / 25%);  
+}
+
 
 /* footer css */
 footer{
@@ -828,6 +896,10 @@ body.open-menu{position: relative; overflow: hidden;}
 
 @media(max-width:1024px){
     .banner-sec:after {bottom: -20px;background-size: auto;padding: 11px;}
+    ul.desk_box{justify-content: center;}
+    ul.desk_box li{width:30%;}
+    ul#pills-tab{justify-content: center;}
+    ul#pills-tab li {margin: 10px 10px; }    
 }
 
 @media(max-width:992px){
@@ -843,6 +915,11 @@ body.open-menu{position: relative; overflow: hidden;}
     .video-overlaybox p {line-height: 28px;font-size: 20px; padding-top: 0px;}
     footer ul{margin: 20px 0;} 
     footer ul, ul.footer-social{justify-content: center;}   
+    ul#pills-tab li {margin: 5px 0px;}
+    .contact-tabsec .nav-pills .nav-link{font-size: 18px;}
+    ul.desk_box{justify-content: center;}
+    ul.desk_box li{width:45%;}
+    ul#pills-tab{justify-content: center;}
 }
 
 @media(max-width:768px){
@@ -875,6 +952,15 @@ body.open-menu{position: relative; overflow: hidden;}
     footer ul {margin-bottom: 30px; justify-content: center;}
     ul.footer-social {justify-content: center; margin-top: 20px;}
     .ve_explore{padding: 10px;}
+    .bread-section {padding: 20px 0;}
+    .bread-section h3{font-size: 20px;}
+    .head-text h3 {font-size: 18px;line-height: 18px;}
+    .global-section .head-text{border-bottom: 0px;}
+    .contact-tabsec {background-color: #ffffff;}
+    ul#pills-tab li {margin: 5px 10px;}
+    .contact-tabsec .nav-pills .nav-link {padding: 10px 15px;font-size: 16px;}
+    ul.desk_box{justify-content: center;}
+    ul.desk_box li{width:45%;}
 }
 
 @media(max-width:500px){
@@ -882,4 +968,7 @@ body.open-menu{position: relative; overflow: hidden;}
     .video-overlaybox {float: right;width: 100%;padding-right: 40px;}
 }
 
-@media(max-width:320px){.ve_explore {padding: 10px 5px;}}
+@media(max-width:320px){
+    .ve_explore{padding: 10px 5px;}
+}
+

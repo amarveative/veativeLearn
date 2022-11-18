@@ -11,18 +11,19 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>    
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet" />
+    <script src="js/jquery-3.6.1.min.js"></script>
 </head>
 <body>
     <header class="header" id="veativeHeader">
-        <div class="top-header">
+        <div class="top-header only-desk">
             <div class="container">
                 <div class="row">
-                   <div class="col-lg-3">
+                   <div class="col-lg-3 col-md-3">
                         <div class="logo">
                             <a href="#"><img src="images/logo-1.png" class="img-fluid" /></a>        
                         </div>
                    </div> 
-                   <div class="col-lg-9">
+                   <div class="col-lg-9 col-md-9">
                         <ul class="header-topmenu">
                             <li><a href="#" target="_blank">Explore Library</a></li>
                             <li><a href="#" target="_blank">Support</a></li>
@@ -32,7 +33,7 @@
                 </div>
             </div>
         </div>
-        <div class="main-header">
+        <div class="main-header only-desk">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
@@ -107,6 +108,133 @@
                     </div>
                 </div>
             </div>
+        </div>
+        <div class="mob-header only-mob">            
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="moblogo">
+                  <a href="#">
+                    <img src="images/logo-1.png" class="img-fluid" />
+                  </a>
+                </div>
+                <div class="mobicon">
+                  <i class="fa fa-bars"></i>
+                </div> 
+              </div>
+              <div class="col-lg-12">
+                <div class="slide-menu" id="mobile-menu">
+                  <div class="topmob-head">
+                    <a href="#" class="topmob-logo"><img src="images/logo-1.png" /></a>
+                    <div class="mobicon"><i class="fa fa-bars"></i></div>
+                  </div>
+                  <ul class="top-menu">
+                    <li><a href="#">Explore Library</a></li>
+                    <li><a href="#">Support</a></li>
+                    <li><a href="#">Login</a></li>
+                  </ul>
+                  <div class="accordion" id="accordionExample">
+                  <ul>
+                    <li><a href="#">Home</a></li>
+                    <li>                      
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                          <a href="#">Vr Content</a>
+                          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">                             
+                          </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                          <div class="accordion-body">
+                            <ul class="submob-menu">
+                              <li><a href="#">Vr Content</a></li>
+                              <li><a href="#">STEM</a></li>
+                              <li><a href="#">ELL</a></li>
+                              <li><a href="#">virtual Tours</a></li>
+                              <li><a href="#">Special Ed</a></li>
+                              <li><a href="#">VRCreate</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li><a href="#">Platform</a></li>
+                    <li>                      
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                          <a href="#">Hardware</a>
+                          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">                            
+                          </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                          <div class="accordion-body">
+                            <ul class="submob-menu">
+                              <li><a href="#">Hardware</a></li>
+                              <li><a href="#">Oculus</a></li>
+                              <li><a href="#">Future</a></li>                              
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li>                      
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                          <a href="#">Getting Started</a>
+                          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">                            
+                          </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                          <div class="accordion-body">
+                            <ul class="submob-menu">
+                              <li><a href="#">Getting Started</a></li>
+                              <li><a href="#">Social Enterprise</a></li>                                                            
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li>                      
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingFour">
+                          <a href="#">Case Studies</a>
+                          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">                            
+                          </button>
+                        </h2>
+                        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                          <div class="accordion-body">
+                            <ul class="submob-menu">
+                              <li><a href="#">Case Studies</a></li>
+                              <li><a href="#">Social Enterprise</a></li>                                                            
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li>                      
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingFour">
+                          <a href="#">Contact Us</a>
+                          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">                           
+                          </button>
+                        </h2>
+                        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                          <div class="accordion-body">
+                            <ul class="submob-menu">
+                              <li><a href="#">Contact Us</a></li>
+                              <li><a href="#">News</a></li>                                                            
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>          
         </div>
     </header>
     
@@ -221,7 +349,7 @@
       </section>
       <section class="contact-tabsec">
         <div class="container">
-          <div class="row">
+          <div class="row only-desk">
             <div class="col-lg-12">
               <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
                 <li class="nav-item" role="presentation">
@@ -622,17 +750,17 @@
     <footer>
       <div class="container">
         <div class="row">
-          <div class="col-lg-4">
+          <div class="col-lg-4 col-md-12">
             <ul class="footer-menu">
               <li><a href="#">Privacy Policy</a></li>
               <li><a href="#">Terms of Use</a></li>
               <li><a href="#">Support</a></li>
             </ul>            
           </div>
-          <div class="col-lg-4">
+          <div class="col-lg-4 col-md-12">
             <p class="copyright">© 2022 Veative Labs. All Rights Reserved.</p>
           </div>
-          <div class="col-lg-4">
+          <div class="col-lg-4 col-md-12">
             <ul class="footer-social">
               <li>
                 <a href="#">
